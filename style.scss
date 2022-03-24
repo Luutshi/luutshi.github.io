@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    display: flex;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-family: Avenir Next,Avenir,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-style: normal;
+
+    ::-moz-selection {
+        background: rgba(255, 127, 80, 0.60);
+        color:#222222;
+    }
+      
+    ::selection {
+        background: rgba(255, 127, 80, 0.60);
+        color: #222222;
+    }
+
+    .presentation {
+        h1 {
+            font-weight: 700;
+            font-size: 50px;
+            margin: 35px;
+            width: fit-content;
+
+            .hand {
+                display: -moz-inline-stack;
+                display: inline-block;
+                *display: inline;
+
+                -webkit-animation-name:shake;
+                -webkit-animation-duration:1.5s;
+                -webkit-animation-timing-function:linear;
+                -webkit-animation-delay:1s;
+                -webkit-animation-play-state:active;
+                -webkit-animation-iteration-count:infinite;
+            }
+        }
+
+        h2 {
+            margin: 35px;
+            font-weight: 400;
+            font-size: 32px;
+        }
+        
+        section {
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 35px;
+                max-width: 800px;
+
+
+                display: flex;
+                flex-direction: column;
+                gap: 38.5px;
+
+                li {
+                    font-weight: 400;
+                    font-size: 24px;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #5b7cc4;
+                        
+                        &::selection {
+                            background: rgba(255, 127, 80, 0.60);
+                            color: #5b7cc4;
+                        }
+            
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .projects {
+                        color: coral;
+                        
+                        &::selection {
+                            background: rgba(255, 127, 80, 0.60);
+                            color: lime;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes shake {
+    from {transform: rotate(0deg);}
+    10% {transform: rotate(70deg); margin-left: 10px;}
+    20% {transform: rotate(0deg); margin-left: 0px;}
+    30% {transform: rotate(70deg); margin-left: 10px;}
+    40% {transform: rotate(0deg); margin-left: 0px;}
+    to {transform: rotate(0deg);}
+}
+
+@media screen and (max-width: 870px) {
+    li {
+        width: calc(100vw - 70px);
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
