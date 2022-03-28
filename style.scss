@@ -37,8 +37,7 @@ body {
             }
         }
 
-        h2 {
-            margin: 35px;
+        .name {
             font-weight: 400;
             font-size: 32px;
         }
@@ -56,11 +55,11 @@ body {
                 gap: 38.5px;
 
                 li {
-                    font-weight: 400;
-                    font-size: 24px;
 
-                    p {
+                    h2 {
                         margin: 0;
+                        font-weight: 400;
+                        font-size: 24px;
                     }
 
                     a {
@@ -104,7 +103,7 @@ body {
     li {
         width: calc(100vw - 70px);
 
-        p {
+        h2 {
             font-size: 18px;
         }
     }

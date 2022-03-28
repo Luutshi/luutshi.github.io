@@ -31,8 +31,7 @@ body .presentation h1 .hand {
   -webkit-animation-play-state: active;
   -webkit-animation-iteration-count: infinite;
 }
-body .presentation h2 {
-  margin: 35px;
+body .presentation .name {
   font-weight: 400;
   font-size: 32px;
 }
@@ -45,12 +44,10 @@ body .presentation section ul {
   flex-direction: column;
   gap: 38.5px;
 }
-body .presentation section ul li {
+body .presentation section ul li h2 {
+  margin: 0;
   font-weight: 400;
   font-size: 24px;
-}
-body .presentation section ul li p {
-  margin: 0;
 }
 body .presentation section ul li a {
   text-decoration: none;
@@ -99,7 +96,7 @@ body .presentation section ul li .projects::selection {
   li {
     width: calc(100vw - 70px);
   }
-  li p {
+  li h2 {
     font-size: 18px;
   }
 }
