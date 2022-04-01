@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    display: flex;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-family: Avenir Next,Avenir,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-style: normal;
+
+    ::-moz-selection {
+        background: rgba(255, 127, 80, 0.60);
+        color:#222222;
+    }
+      
+    ::selection {
+        background: rgba(255, 127, 80, 0.60);
+        color: #222222;
+    }
+
+    .presentation {
+        > p {
+            margin: 35px 0 0 35px;
+
+            a {
+                color: #5b7cc4; 
+                text-decoration: none;
+            }
+        }
+        
+        h1 {
+            font-weight: 700;
+            font-size: 50px;
+            margin: 0 35px 35px 35px;
+            width: fit-content;
+        }
+        
+        section {
+            .projects {
+                list-style: none;
+                padding: 0;
+                margin: 35px;
+                max-width: 1180px;
+
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+
+                a {
+                    background-color: #121212;
+                    width: 300px;
+                    padding: 40px;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 3px;
+
+                    &:hover {
+                        background-color: #292929;
+                    }
+
+                    .repo-title {
+                        margin: 0;
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+
+                    p {
+                        margin: 20px 0;
+                    }
+
+                    .stars {
+                        i {
+                            color: yellow;
+                        }
+
+                        margin: 0;
+                    }
+                }
+
+                .scss {
+                    border-top: 4px solid pink;
+                }
+
+                .green {
+                    border-top: 4px solid lime;
+                }
+
+                .yellow {
+                    border-top: 4px solid yellow;
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes shake {
+    from {transform: rotate(0deg);}
+    10% {transform: rotate(70deg); margin-left: 10px;}
+    20% {transform: rotate(0deg); margin-left: 0px;}
+    30% {transform: rotate(70deg); margin-left: 10px;}
+    40% {transform: rotate(0deg); margin-left: 0px;}
+    to {transform: rotate(0deg);}
+}
+
+@media screen and (max-width: 870px) {
+    li {
+        width: calc(100vw - 70px);
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+}
