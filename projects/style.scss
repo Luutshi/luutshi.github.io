@@ -16,7 +16,7 @@ body {
         color: #222222;
     }
 
-    .presentation {
+    .main-section {
         > p {
             margin: 35px 0 0 35px;
 
@@ -33,59 +33,57 @@ body {
             width: fit-content;
         }
         
-        section {
-            .projects {
-                list-style: none;
-                padding: 0;
-                margin: 35px;
-                max-width: 1180px;
+        .projects {
+            list-style: none;
+            padding: 0;
+            margin: 35px;
+            max-width: 1180px;
 
-                display: flex;
-                gap: 20px;
-                flex-wrap: wrap;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
 
-                a {
-                    background-color: #121212;
-                    width: 300px;
-                    padding: 40px;
-                    color: white;
-                    text-decoration: none;
-                    border-radius: 3px;
+            a {
+                background-color: #121212;
+                width: 300px;
+                padding: 40px;
+                color: white;
+                text-decoration: none;
+                border-radius: 3px;
 
-                    &:hover {
-                        background-color: #292929;
-                    }
-
-                    .repo-title {
-                        margin: 0;
-                        font-weight: 700;
-                        font-size: 20px;
-                    }
-
-                    p {
-                        margin: 20px 0;
-                    }
-
-                    .stars {
-                        i {
-                            color: yellow;
-                        }
-
-                        margin: 0;
-                    }
+                &:hover {
+                    background-color: #292929;
                 }
 
-                .scss {
-                    border-top: 4px solid pink;
+                .repo-title {
+                    margin: 0;
+                    font-weight: 700;
+                    font-size: 20px;
                 }
 
-                .green {
-                    border-top: 4px solid lime;
+                p {
+                    margin: 20px 0;
                 }
 
-                .yellow {
-                    border-top: 4px solid yellow;
+                .stars {
+                    i {
+                        color: yellow;
+                    }
+
+                    margin: 0;
                 }
+            }
+
+            .scss {
+                border-top: 4px solid pink;
+            }
+
+            .green {
+                border-top: 4px solid lime;
+            }
+
+            .yellow {
+                border-top: 4px solid yellow;
             }
         }
     }
