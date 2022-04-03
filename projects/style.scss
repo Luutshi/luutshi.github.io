@@ -61,6 +61,17 @@ body {
                     font-size: 20px;
                 }
 
+                .repo-desc {
+                    max-height: 45px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    margin-bottom: 0;
+                }
+
+                .ellipsis {
+                    margin-top: 0;
+                }
+
                 p {
                     margin: 20px 0;
                 }

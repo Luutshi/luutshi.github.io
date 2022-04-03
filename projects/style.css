@@ -52,6 +52,15 @@ body .main-section .projects a .repo-title {
   font-weight: 700;
   font-size: 20px;
 }
+body .main-section .projects a .repo-desc {
+  max-height: 45px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+body .main-section .projects a .ellipsis {
+  margin-top: 0;
+}
 body .main-section .projects a p {
   margin: 20px 0;
 }
