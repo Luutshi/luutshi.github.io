@@ -97,13 +97,3 @@ body {
     40% {transform: rotate(0deg); margin-left: 0px;}
     to {transform: rotate(0deg);}
 }
-
-@media screen and (max-width: 870px) {
-    li {
-        width: calc(100vw - 70px);
-
-        h2 {
-            font-size: 18px;
-        }
-    }
-}
